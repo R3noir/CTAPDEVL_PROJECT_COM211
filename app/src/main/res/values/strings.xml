@@ -1,0 +1,92 @@
+<resources>
+    <string name="app_name">Scan &amp; Sort</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="glass_jars_description">
+        Glass jars are versatile containers made from glass, commonly used for storing food, beverages, and other items. They are valued for their durability, non-reactivity, and ability to preserve contents without affecting their taste or quality. Glass jars are fully recyclable and can be melted down to create new glass products, making them an environmentally friendly option.
+    </string>
+
+    <string name="metal_cans_description">
+        Metal cans are containers typically made from aluminum or steel, widely used for packaging food, beverages, and other products. They are highly durable, lightweight, and protect contents from light and air. Metal cans are fully recyclable and can be reprocessed into new metal products multiple times without losing quality, making them an eco-friendly option.
+    </string>
+
+    <string name="plastic_bottles_description">
+        Plastic bottles are lightweight containers made from various types of plastic, commonly used for beverages, household cleaners, and personal care products. They are popular due to their convenience, durability, and resistance to breakage. Plastic bottles are recyclable, though the process varies depending on the type of plastic.
+    </string>
+
+    <string name="paper_wastes_description">
+        Paper wastes include a variety of paper products such as newspapers, magazines, cardboard, office paper, and packaging materials. They are biodegradable and one of the most commonly recycled materials. Recycling paper conserves resources, saves energy, and reduces landfill waste.
+    </string>
+
+    <string name="aerosol_cans_description">
+        Aerosol cans are pressurized containers used to dispense liquids, powders, or creams in a fine spray. They are commonly used for products like deodorants, hair sprays, and household cleaners. They are considered dangerous because they can explode under pressure so it is not advisable to recycle these items unless you know the proper guidelines.
+    </string>
+
+    <string name="aseptic_cartons_description">
+        Aseptic cartons, often used for packaging liquids like milk, juice, and soup, are multi-layered containers designed to keep products fresh without refrigeration. They are made from a combination of paper, plastic, and aluminum. Aseptic cartons are recyclable, but they need to be properly sorted and processed to separate the different materials.
+    </string>
+
+    <string name="batteries_description">
+        Batteries are devices that store and provide electrical energy for various electronic devices. They come in different types, including alkaline, lithium, and rechargeable batteries. Due to their chemical content, batteries should not be disposed of in regular trash. They need to be recycled through special programs that handle hazardous materials.
+    </string>
+
+    <string name="broken_glass_description">
+        Broken glass refers to shards or pieces of glass from items like windows, mirrors, and glassware. While recyclable, broken glass poses a safety risk and should be handled carefully. It should be placed in a sealed, sturdy container before being taken to a recycling facility that accepts glass.
+    </string>
+
+    <string name="cardboard_description">
+        Cardboard is a widely used material for packaging and shipping. It is made from paper-based materials and is easily recyclable. Cardboard should be flattened and free from contaminants like food residue before recycling.
+    </string>
+
+    <string name="drinking_glass_description">
+        Drinking glasses are glassware used for consuming beverages. Unlike glass bottles and jars, drinking glasses are often made from tempered or treated glass, which may not be recyclable in standard glass recycling programs.
+    </string>
+
+    <string name="flexible_plastic_packaging">
+        Flexible plastic packaging includes items like plastic bags, wraps, and pouches used for food storage and other products. These materials are lightweight and versatile but challenging to recycle through regular curbside programs.
+    </string>
+
+    <string name="glass_bottles_description">
+        Glass bottles are sturdy containers made from glass, commonly used for storing beverages such as water, soda, beer, and wine. They are valued for their non-reactive properties, which help preserve the taste and quality of the contents. Glass bottles are fully recyclable and can be endlessly recycled without losing their quality.
+    </string>
+
+    <string name="light_bulbs_description">
+        Light bulbs come in various types, including incandescent, fluorescent, and LED. Each type requires different disposal methods. Incandescent bulbs can often be disposed of in regular trash, while fluorescent bulbs contain hazardous materials and need special recycling. LEDs are generally recyclable.
+    </string>
+
+    <string name="mugs_description">
+        Mugs are reusable containers made from materials like ceramic, glass, or plastic. While durable and intended for long-term use, broken or unwanted mugs are typically not recyclable through regular curbside programs.
+    </string>
+
+    <string name="plastic_bags_description">
+        Plastic bags are commonly used for groceries and packaging. While convenient, they pose environmental risks if not properly disposed of. They are not suitable for regular curbside recycling but can often be returned to retail stores with dedicated recycling bins.
+    </string>
+
+    <string name="plastic_jars_description">
+        Plastic jars, used for food, cosmetics, and other products, are lightweight and durable. They are typically made from recyclable plastics like PET or HDPE. To recycle, jars should be rinsed and free of residue.
+    </string>
+
+    <string name="plastic_jugs_description">
+        Plastic jugs, commonly used for milk, juice, and detergents, are made from recyclable materials like HDPE. They should be rinsed and free from contaminants before recycling.
+    </string>
+
+    <string name="plastic_utensils_description">
+        Plastic utensils, including forks, knives, and spoons, are often single-use and made from various types of plastic. They are not usually accepted in curbside recycling programs due to their small size and potential contamination.
+    </string>
+
+    <string name="stained_cardboard_description">
+        Stained cardboard, such as pizza boxes with grease or food residue, can complicate recycling efforts. Only the clean portions should be recycled, while the contaminated parts should be composted or disposed of in the trash.
+    </string>
+
+    <string name="styrofoam_description">
+        Styrofoam, also known as polystyrene, is commonly used for food containers and packaging materials. It is lightweight but challenging to recycle and often not accepted in curbside programs.
+    </string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

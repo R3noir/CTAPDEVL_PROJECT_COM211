@@ -1,0 +1,444 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buttonScanItems"
+            android:layout_width="430dp"
+            android:layout_height="180dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="40dp"
+            android:background="@drawable/rounded_button_scan_items"
+            android:drawableRight="@drawable/scan_icon5_small"
+            android:drawablePadding="0dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:padding="15dp"
+            android:text="Scan Items"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="30sp" />
+
+        <!-- Categories -->
+        <TextView
+            android:layout_width="410dp"
+            android:layout_height="wrap_content"
+            android:text="Categories"
+            android:textSize="30sp"
+            android:gravity="left"
+            android:layout_marginBottom="16dp" />
+
+        <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:orientation="horizontal">
+
+        <!-- Category 1: Aerosol Cans -->
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/buttonAerosolCans"
+                android:layout_width="0dp"
+                android:layout_height="180dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="12dp"
+                android:background="@drawable/rounded_button"
+                android:gravity="center"
+                android:onClick="openAerosolCanActivity"
+                android:padding="16dp"
+                android:text="Aerosol Cans"
+                android:textAllCaps="false"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:drawableTop="@drawable/aerosol_cans_small"
+                />
+
+        <!-- Category 2: Aseptic Cartons -->
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/buttonAsepticCartons"
+                android:layout_width="0dp"
+                android:layout_height="180dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="12dp"
+                android:background="@drawable/rounded_button"
+                android:gravity="center"
+                android:onClick="openAsepticCartonsActivity"
+                android:padding="16dp"
+                android:text="Aseptic Cartons"
+                android:textAllCaps="false"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:drawableTop="@drawable/aeseptic_cartons_small"
+                />
+
+        <!-- Category 3: Batteries -->
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/buttonBatteries"
+                android:layout_width="0dp"
+                android:layout_height="180dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="12dp"
+                android:background="@drawable/rounded_button"
+                android:gravity="center"
+                android:onClick="openBatteriesActivity"
+                android:padding="16dp"
+                android:text="Batteries"
+                android:textAllCaps="false"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:drawableTop="@drawable/batteries_small"
+                />
+
+        <!-- Category 4: Broken Glass -->
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/buttonBrokenGlass"
+                android:layout_width="0dp"
+                android:layout_height="180dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="12dp"
+                android:background="@drawable/rounded_button"
+                android:gravity="center"
+                android:onClick="openBrokenGlassActivity"
+                android:padding="16dp"
+                android:text="Broken Glass"
+                android:textAllCaps="false"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:drawableTop="@drawable/broken_glass_small"
+                />
+
+    </GridLayout>
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:orientation="horizontal">
+
+            <!-- Category 5: Cardboard -->
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/buttonCardboard"
+                android:layout_width="0dp"
+                android:layout_height="180dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="12dp"
+                android:background="@drawable/rounded_button"
+                android:gravity="center"
+                android:onClick="openCardboardActivity"
+                android:padding="16dp"
+                android:text="Cardboard"
+                android:textAllCaps="false"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:drawableTop="@drawable/cardboard_small"
+                />
+
+            <!-- Category 6: Drinking Glass -->
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/buttonDrinkingGlass"
+                android:layout_width="0dp"
+                android:layout_height="180dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="12dp"
+                android:background="@drawable/rounded_button"
+                android:gravity="center"
+                android:onClick="openDrinkingGlassActivity"
+                android:padding="16dp"
+                android:text="Drinking Glass"
+                android:textAllCaps="false"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:drawableTop="@drawable/drinking_glass_small"
+                />
+
+            <!-- Category 7: Flexible Plastic Packaging -->
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/buttonPlasticPackaging"
+                android:layout_width="0dp"
+                android:layout_height="180dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="12dp"
+                android:background="@drawable/rounded_button"
+                android:gravity="center"
+                android:onClick="openPlasticPackagingActivity"
+                android:padding="16dp"
+                android:text="Flexible Plastic"
+                android:textAllCaps="false"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:drawableTop="@drawable/flexible_plastic_small"
+                />
+
+            <!-- Category 8: Glass Bottles -->
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/buttonGlassBottles"
+                android:layout_width="0dp"
+                android:layout_height="180dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="12dp"
+                android:background="@drawable/rounded_button"
+                android:gravity="center"
+                android:onClick="openGlassBottlesActivity"
+                android:padding="16dp"
+                android:text="Glass Bottles"
+                android:textAllCaps="false"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:drawableTop="@drawable/glass_bottles_small"
+                />
+        </GridLayout>
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:orientation="horizontal">
+
+            <!-- Category 9: Glass Jars -->
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/buttonGlassJars"
+                android:layout_width="0dp"
+                android:layout_height="180dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="12dp"
+                android:background="@drawable/rounded_button"
+                android:gravity="center"
+                android:onClick="openGlassJarsActivity"
+                android:padding="16dp"
+                android:text="Glass Jars"
+                android:textAllCaps="false"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:drawableTop="@drawable/glass_jar_small"
+                />
+
+            <!-- Category 10: Light Bulbs -->
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/buttonLightBulbs"
+                android:layout_width="0dp"
+                android:layout_height="180dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="12dp"
+                android:background="@drawable/rounded_button"
+                android:gravity="center"
+                android:onClick="openLightBulbsActivity"
+                android:padding="16dp"
+                android:text="Light Bulbs"
+                android:textAllCaps="false"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:drawableTop="@drawable/light_bulbs_small"
+                />
+
+            <!-- Category 11: Metal Cans -->
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/buttonMetalCans"
+                android:layout_width="0dp"
+                android:layout_height="180dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="12dp"
+                android:background="@drawable/rounded_button"
+                android:gravity="center"
+                android:onClick="openMetalCansActivity"
+                android:padding="16dp"
+                android:text="Metal Cans"
+                android:textAllCaps="false"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:drawableTop="@drawable/metal_cans_small"
+                />
+
+            <!-- Category 12: Mugs -->
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/buttonMugs"
+                android:layout_width="0dp"
+                android:layout_height="180dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="12dp"
+                android:background="@drawable/rounded_button"
+                android:gravity="center"
+                android:onClick="openMugsActivity"
+                android:padding="16dp"
+                android:text="Mugs"
+                android:textAllCaps="false"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:drawableTop="@drawable/mugs_small"
+                />
+
+        </GridLayout>
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:orientation="horizontal">
+
+            <!-- Category 13: Paper Wastes -->
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/buttonPaperWastes"
+                android:layout_width="0dp"
+                android:layout_height="180dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="12dp"
+                android:background="@drawable/rounded_button"
+                android:gravity="center"
+                android:onClick="openPaperWastesActivity"
+                android:padding="16dp"
+                android:text="Paper Waste"
+                android:textAllCaps="false"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:drawableTop="@drawable/paper_waste_small"
+                />
+
+            <!-- Category 14: Plastic Bags -->
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/buttonPlasticBags"
+                android:layout_width="0dp"
+                android:layout_height="180dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="12dp"
+                android:background="@drawable/rounded_button"
+                android:gravity="center"
+                android:onClick="openPlasticBagsActivity"
+                android:padding="16dp"
+                android:text="Plastic Bags"
+                android:textAllCaps="false"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:drawableTop="@drawable/plastic_bags_small"
+                />
+
+            <!-- Category 15: Plastic Bottles -->
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/buttonPlasticBottles"
+                android:layout_width="0dp"
+                android:layout_height="180dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="12dp"
+                android:background="@drawable/rounded_button"
+                android:gravity="center"
+                android:onClick="openPlasticBottlesActivity"
+                android:padding="16dp"
+                android:text="Plastic Bottles"
+                android:textAllCaps="false"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:drawableTop="@drawable/plastic_bottles_small"
+                />
+
+            <!-- Category 16: Plastic Jars -->
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/buttonPlasticJars"
+                android:layout_width="0dp"
+                android:layout_height="180dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="12dp"
+                android:background="@drawable/rounded_button"
+                android:gravity="center"
+                android:onClick="openPlasticJarsActivity"
+                android:padding="16dp"
+                android:text="Plastic Jars"
+                android:textAllCaps="false"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:drawableTop="@drawable/plastic_jars_small"
+                />
+
+        </GridLayout>
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:orientation="horizontal">
+
+            <!-- Category 17: Plastic Jugs -->
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/buttonPlasticJugs"
+                android:layout_width="0dp"
+                android:layout_height="180dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="12dp"
+                android:background="@drawable/rounded_button"
+                android:gravity="center"
+                android:onClick="openPlasticJugsActivity"
+                android:padding="16dp"
+                android:text="Plastic Jugs"
+                android:textAllCaps="false"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:drawableTop="@drawable/plastic_jugs_small"
+                />
+
+            <!-- Category 18: Plastic Utensils -->
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/buttonPlasticUtensils"
+                android:layout_width="0dp"
+                android:layout_height="180dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="12dp"
+                android:background="@drawable/rounded_button"
+                android:gravity="center"
+                android:onClick="openPlasticUtensilsActivity"
+                android:padding="16dp"
+                android:text="Plastic Utensils"
+                android:textAllCaps="false"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:drawableTop="@drawable/plastic_utensils_small"
+                />
+
+            <!-- Category 19: Stained Cardboard -->
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/buttonStainedCardboard"
+                android:layout_width="0dp"
+                android:layout_height="180dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="12dp"
+                android:background="@drawable/rounded_button"
+                android:gravity="center"
+                android:onClick="openStainedCardboardActivity"
+                android:padding="16dp"
+                android:text="Stained Cardboard"
+                android:textAllCaps="false"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:drawableTop="@drawable/stained_cardboard_small"
+                />
+
+            <!-- Category 20: Styrofoam -->
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/buttonStyrofoam"
+                android:layout_width="0dp"
+                android:layout_height="180dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="12dp"
+                android:background="@drawable/rounded_button"
+                android:gravity="center"
+                android:onClick="openStyrofoamActivity"
+                android:padding="16dp"
+                android:text="Styrofoam"
+                android:textAllCaps="false"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:drawableTop="@drawable/styrofoam_small"
+                />
+
+        </GridLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+</ScrollView>

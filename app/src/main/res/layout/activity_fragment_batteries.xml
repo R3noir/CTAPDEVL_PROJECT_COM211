@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:gravity="center_horizontal">
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".5" />
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:contentDescription="Batteries"
+            android:src="@drawable/batteries" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Batteries"
+            android:textSize="24sp"
+            android:gravity="center"
+            android:paddingTop="16dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Non-Recyclable"
+            android:textSize="16sp"
+            android:textColor="@android:color/holo_green_dark"
+            android:gravity="center"
+            android:paddingTop="8dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:background="@color/green"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Description Section -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Description:"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/green"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/batteries_description"
+                    android:textSize="16sp"
+                    android:paddingTop="4dp"
+                    android:textColor="@android:color/black"
+                    android:paddingStart="25dp" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Best Option Section -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Best Option:"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/green"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Do not throw in the trash."
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Batteries have high chemical content, it is not advisable to be disposed of in regular trash."
+                    android:textSize="18sp"
+                    android:paddingTop="4dp"
+                    android:textColor="@android:color/black"
+                    android:paddingStart="25dp" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Instructions Section -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Other Options:"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/green"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Drop Off at a Special Facility:"
+                    android:textSize="18sp"
+                    android:paddingTop="8dp"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Batteries need to be recycled and handled in recycling facilities that specializes in hazardous materials."
+                    android:textSize="18sp"
+                    android:paddingTop="4dp"
+                    android:textColor="@android:color/black"
+                    android:paddingStart="25dp" />
+
+
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Instructions:"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/green"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Identify the battery type:"
+                    android:textSize="18sp"
+                    android:paddingTop="8dp"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold"
+                    android:paddingStart="25dp"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Alkaline Batteries:  Alkaline batteries are a type of primary battery dependent on the reaction between zinc and manganese dioxide."
+                    android:textSize="18sp"
+                    android:paddingTop="4dp"
+                    android:textColor="@android:color/black"
+                    android:paddingStart="25dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Lithium Batteries:  Lithium batteries are a type of primary battery that utilizes lithium metal or lithium compounds as an anode."
+                    android:textSize="18sp"
+                    android:paddingTop="25dp"
+                    android:textColor="@android:color/black"
+                    android:paddingStart="25dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Rechargeable Batteries:  Rechargeable batteries, also known as secondary batteries, can be recharged and used multiple times. The most common types include Nickel-Cadmium (NiCd), Nickel-Metal Hydride (NiMH), and Lithium-Ion (Li-ion)."
+                    android:textSize="18sp"
+                    android:paddingTop="25dp"
+                    android:textColor="@android:color/black"
+                    android:paddingStart="25dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Sort and secure:"
+                    android:textSize="18sp"
+                    android:paddingTop="25dp"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold"
+                    android:paddingStart="25dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="If you have multiple batteries, sort each depending on the type and secure and place it inside a container."
+                    android:textSize="18sp"
+                    android:paddingTop="8dp"
+                    android:textColor="@android:color/black"
+                    android:paddingStart="25dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Drop Off:"
+                    android:textSize="18sp"
+                    android:paddingTop="25dp"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold"
+                    android:paddingStart="25dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Find the nearest recycling facility and drop off the items."
+                    android:textSize="18sp"
+                    android:paddingTop="4dp"
+                    android:textColor="@android:color/black"
+                    android:paddingStart="25dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Follow guidelines:"
+                    android:textSize="18sp"
+                    android:paddingTop="25dp"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold"
+                    android:paddingStart="25dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Follow the guidelines of the facility to ensure proper handling."
+                    android:textSize="18sp"
+                    android:paddingTop="4dp"
+                    android:textColor="@android:color/black"
+                    android:paddingStart="25dp" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+</ScrollView>

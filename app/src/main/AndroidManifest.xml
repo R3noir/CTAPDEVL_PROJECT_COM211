@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.appprojgui">
+    <!-- Required permissions -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission
+        android:name="android.permission.READ_MEDIA_IMAGES"
+        tools:ignore="UnusedAttribute" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppProjGUI"
+        tools:targetApi="31">
+        <activity
+            android:name=".OnBoarding"
+            android:exported="false" />
+        <activity
+            android:name=".DisplayImageActivity"
+            android:exported="false" /> <!-- Fragment activities -->
+        <activity
+            android:name=".fragment_styrofoam"
+            android:exported="false" />
+        <activity
+            android:name=".fragment_stainedcardboard"
+            android:exported="false" />
+        <activity
+            android:name=".fragment_plasticutensils"
+            android:exported="false" />
+        <activity
+            android:name=".fragment_plasticjugs"
+            android:exported="false" />
+        <activity
+            android:name=".fragment_plasticjars"
+            android:exported="false" />
+        <activity
+            android:name=".fragment_plasticbags"
+            android:exported="false" />
+        <activity
+            android:name=".fragment_mugs"
+            android:exported="false" />
+        <activity
+            android:name=".fragment_lightbulbs"
+            android:exported="false" />
+        <activity
+            android:name=".fragment_glassbottles"
+            android:exported="false" />
+        <activity
+            android:name=".fragment_flexibleplastic"
+            android:exported="false" />
+        <activity
+            android:name=".fragment_drinkingglass"
+            android:exported="false" />
+        <activity
+            android:name=".fragment_cardboard"
+            android:exported="false" />
+        <activity
+            android:name=".fragment_brokenglass"
+            android:exported="false" />
+        <activity
+            android:name=".fragment_batteries"
+            android:exported="false" />
+        <activity
+            android:name=".fragment_aseptic"
+            android:exported="false" />
+        <activity
+            android:name=".fragment_aerosol"
+            android:exported="false" />
+        <activity
+            android:name=".fragment_glass"
+            android:exported="false" />
+        <activity
+            android:name=".fragment_plastic"
+            android:exported="false" />
+        <activity
+            android:name=".fragment_metal"
+            android:exported="false" />
+        <activity
+            android:name=".fragment_paper"
+            android:exported="false" /> <!-- Activities -->
+        <activity android:name=".AerosolCanActivity" />
+        <activity android:name=".AsepticCartonActivity" />
+        <activity android:name=".BatteryActivity" />
+        <activity android:name=".BrokenGlassActivity" />
+        <activity android:name=".CardboardActivity" />
+        <activity android:name=".DrinkingGlassActivity" />
+        <activity android:name=".FlexiblePlasticPackagingActivity" />
+        <activity android:name=".GlassBottleActivity" />
+        <activity android:name=".GlassJarActivity" />
+        <activity android:name=".LightBulbActivity" />
+        <activity android:name=".MetalCanActivity" />
+        <activity android:name=".MugActivity" />
+        <activity android:name=".PaperWasteActivity" />
+        <activity android:name=".PlasticBagActivity" />
+        <activity android:name=".PlasticBottleActivity" />
+        <activity android:name=".PlasticJarActivity" />
+        <activity android:name=".PlasticJugActivity" />
+        <activity android:name=".PlasticUtensilActivity" />
+        <activity android:name=".StainedCardboardActivity" />
+        <activity android:name=".StyrofoamActivity" />
+        <activity android:name=".ScanItemsActivity" /> <!-- Main activity -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity> <!-- FileProvider for sharing images -->
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+    </application>
+
+</manifest>

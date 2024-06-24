@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="0dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <!-- Circle background -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="-200dp"
+            android:background="@drawable/green_circle_background" />
+
+        <!-- Content Layout -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerInParent="true"
+            android:padding="25dp"
+            android:gravity="center">
+
+            <!-- Top text -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="This looks like"
+                android:textSize="30sp"
+                android:gravity="center"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="16dp"
+                android:textStyle="bold"
+                android:textColor="@color/white" />
+
+            <!-- Circular Image View  -->
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                app:civ_border_width="12dp"
+                app:civ_border_color="#FFFFFF"
+                android:id="@+id/imageView"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:layout_gravity="center"
+                />
+
+            <!-- Prediction text -->
+            <TextView
+                android:id="@+id/Result"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
+                android:text="Prediction"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <!-- Disclaimer text -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Disclaimer: This prediction made by the model may not be 100% accurate."
+                android:textSize="20sp"
+                android:textStyle="italic"
+                android:textColor="@android:color/darker_gray"
+                android:gravity="center"
+                android:padding="12dp"
+                android:layout_marginBottom="13dp"/>
+
+            <!-- Buttons -->
+            <Button
+                android:id="@+id/readMore"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:text="Read More"
+                android:textSize="18sp"
+                android:background="@drawable/rounded_button_scan_now"
+                android:textColor="@android:color/white"
+                android:layout_marginBottom="16dp"
+                android:layout_gravity="center"
+                app:backgroundTint="#509954"/>
+
+            <Button
+                android:id="@+id/tryAgain"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:text="Try Again"
+                android:textSize="18sp"
+                android:background="@drawable/rounded_button_upload"
+                android:textColor="@android:color/white"
+                android:layout_gravity="center"
+                app:backgroundTint="#323232"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>
